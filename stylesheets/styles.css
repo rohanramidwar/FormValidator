@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Noto+Sans&family=Odibee+Sans&display=swap');
+
 *
 {
     margin: 0;
@@ -11,19 +13,39 @@ body
     justify-content: center;
     min-height: 100vh;
     align-items: center;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.container
+{
+    width: 16rem;
 }
 
 h1
 {
-    font-size: 1.2rem;
+    font-size: 18px;
+    margin: 6px 0;
 }
 
 p
 {
-    font-size: 14px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 13px;
+    margin-bottom: 40px;
 }
 
 a
 {
     text-decoration: none;
+}
+
+input
+{
+    outline: none;
+    border-radius: 25px;
+}
+
+button
+{
+    border-radius: 25px;
 }
