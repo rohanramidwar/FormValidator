@@ -13,37 +13,38 @@
             <h1>Create your username and password</h1>
             <p>By continuing, you are setting up a Reddit account and agree to our <a href="">User Agreement</a> and <a href="">Privacy Policy</a>.</p>
             
-            <div>
+            <div class="credentials">
 
-                <div>
-                    <div>
-                        <span>label</span>
-                        <input type="text">
-                        <span class="material-symbols-outlined">
+                <div class="outer-i-div">
+                    <div class="i-div">
+                        <span id="idOfCheck" class="material-symbols-outlined check">
                             check
                             </span>
+                        <input id="idOf-i-Username" type="text" required="required">
+                        <span class="label">Username</span>
                     </div>
-                    <span>error</span>
+                    <span id="invalidUsername" class="invalid">Error</span>
                 </div>
                 
-                <div>
-                    <div>
-                        <span>label</span>
-                        <input type="text">
-                        <button>
+                <div class="outer-i-div">
+                    <div class="i-div">
+                        <input id="idOf-i-Password" type="text" required="required">
+                        <span class="label">Password</span>
+                        <button class="check hide_pass">
                             <span class="material-symbols-outlined">
                                 visibility
                                 </span>
                         </button>
                     </div>
-                    <span>error</span>
+                    <span id="invalidPassword" class="invalid">Error</span>
                 </div>
 
-                <button>submit</button>
+                <button class="continue">Continue</button>
             </div>
                 
             <p>Already a redditor? <a href="">Log In</a></p>
         </form>
     </div>
+    <script src="scripts/index.js"></script>
 </body>
 </html>
