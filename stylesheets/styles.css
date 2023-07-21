@@ -37,6 +37,12 @@ p
 a
 {
     text-decoration: none;
+    color: #0079d3;
+}
+
+.logIn
+{
+    font-weight: 600;
 }
 
 input
@@ -75,6 +81,7 @@ button
 {
     position: absolute;
     left: 15px;
+    color: #a5a4a4;
 }
 
 .i-div > input
@@ -85,6 +92,8 @@ button
     font-size: 16px;
     font-weight: 600;
     padding: 8px 36px 0px 14px;
+    border: none;
+    background: #ededed;
 }
 
 .check
@@ -92,6 +101,7 @@ button
     position: absolute;
     right: 10px;
     font-weight: 600;
+    display: none;
 }
 
 .invalid
@@ -119,11 +129,16 @@ button
     font-size: 15px;
     font-weight: 600;
     /* background: none; */
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    background: #0079d3;
+    opacity: 40%;
 }
 
 .material-symbols-outlined
 {
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .i-div > input:valid ~ span,
@@ -147,4 +162,24 @@ button
 .invalid_show
 {
     display: block;
+}
+
+.i-div > .input_red
+{
+    border: 1.5px solid #ea0027;
+}
+
+.i-div > .input_blue
+{
+    border: 1.5px solid #0079d3;
+}
+
+.outer-i-div > .input_red
+{
+    color: #ea0027;
+}
+
+.outer-i-div > .input_blue
+{
+    color: #0079d3;
 }
