@@ -13,31 +13,31 @@
             <h1>Create your username and password</h1>
             <p>By continuing, you are setting up a Reddit account and agree to our <a href="">User Agreement</a> and <a href="">Privacy Policy</a>.</p>
             
-            <div class="outer-i-btn-div">
+            <div class="outer-i-i-btn">
 
                 <div class="outer-i-div">
                     <div class="i-div">
-                        <span id="idOfCheck" class="material-symbols-outlined i-icons">
+                        <span id="u-valid?" class="material-symbols-outlined i-icons">
                             check
                             </span>
-                        <input id="idOf-i-Username" class="" type="text" required="required">
+                        <input id="u-i" type="text" required="required" onkeydown="usernameCondition()">
                         <span class="i-label">Username</span>
                     </div>
-                    <span id="invalidUsername" class="error-msg">Error</span>
+                    <span id="u-error-msg" class="error-msg">Error</span>
                 </div>
                 
                 <div class="outer-i-div">
                     <div class="i-div">
-                        <span class="material-symbols-outlined i-icons pw_visibility">
+                        <span id="pw-visibility" class="material-symbols-outlined i-icons pw_visibility" onclick="pw_visibility()">
                                 visibility
                                 </span>
-                        <input id="idOf-i-Password" class="" type="password" required="required">
+                        <input class="" id="pw-i" type="password" required="required" onkeydown="passwordCondition()">
                         <span class="i-label">Password</span>
                     </div>
-                    <span id="invalidPassword" class="error-msg"></span>
+                    <span id="pw-error-msg" class="error-msg">Error</span>
                 </div>
 
-                <button id="idContinue" class="continue-btn">Continue</button>
+                <button id="continueBtn" class="continue-btn" onclick="processContinue()">Continue</button>
             </div>
                 
             <p>Already a redditor? <a class="a-log" href="">Log In</a></p>
