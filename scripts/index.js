@@ -18,20 +18,20 @@ function usernameCondition()
     u_valid.style.display = "block"
 
     if(1 < uStr.length && uStr.length < 10) {
-        u_input.style.border = "1px solid green";
+        u_input.style.border = "1px solid #0079d3";
         u_error_msg.innerHTML = "Nice! Username available"
-        u_error_msg.style.color = "green"
+        u_error_msg.style.color = "#0079d3"
         u_valid.innerHTML = "check"
         u_valid.style.color = "green"
         u_valid.style.fontSize = "20px"
     }
     else
     {
-        u_input.style.border = "1px solid blue";
+        u_input.style.border = "1px solid #ea0027";
         u_error_msg.innerHTML = "Username must be between 3 and 10 characters"
-        u_error_msg.style.color = "blue"
+        u_error_msg.style.color = "#ea0027"
         u_valid.innerHTML = "priority_high"
-        u_valid.style.color = "blue"
+        u_valid.style.color = "#ea0027"
         u_valid.style.fontSize = "16px"
 
     }
@@ -45,13 +45,13 @@ function passwordCondition()
     pw_error_msg.style.display = "block";
 
     if(pwStr.length < 7) {
-        pw_input.style.border = "1px solid green";
+        pw_input.style.border = "1px solid #ea0027";
         pw_error_msg.innerHTML = "Password must be at least 8 character long"
-        pw_error_msg.style.color = "green"
+        pw_error_msg.style.color = "#ea0027"
     }
     else
     {
-        pw_input.style.border = "1px solid blue";
+        pw_input.style.border = "1px solid #0079d3";
         pw_error_msg.style.display = "none";
     }
     console.log(pwStr)
@@ -78,9 +78,9 @@ function processContinue()
         {
             continueBtn.style.opacity = "100%"
         }
-    }
-    else
-    {
-        continueBtn.style.opacity = "40%"
+        else
+        {
+            continueBtn.style.opacity = "40%"
+        }
     }
 }
