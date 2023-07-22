@@ -8,41 +8,39 @@
     <link rel="stylesheet" href="stylesheets/styles.css">
 </head>
 <body>
-    <div class="container">
+    <div class="form">
         <form action="">
             <h1>Create your username and password</h1>
             <p>By continuing, you are setting up a Reddit account and agree to our <a href="">User Agreement</a> and <a href="">Privacy Policy</a>.</p>
             
-            <div class="credentials">
+            <div class="outer-i-btn-div">
 
                 <div class="outer-i-div">
                     <div class="i-div">
-                        <span id="idOfCheck" class="material-symbols-outlined check">
+                        <span id="idOfCheck" class="material-symbols-outlined i-icons">
                             check
                             </span>
                         <input id="idOf-i-Username" class="" type="text" required="required">
-                        <span class="label">Username</span>
+                        <span class="i-label">Username</span>
                     </div>
-                    <span id="invalidUsername" class="invalid"></span>
+                    <span id="invalidUsername" class="error-msg">Error</span>
                 </div>
                 
                 <div class="outer-i-div">
                     <div class="i-div">
-                        <input id="idOf-i-Password" class="" type="password" required="required">
-                        <span class="label">Password</span>
-                        <button id="showPassword" class="check hide_pass">
-                            <span class="material-symbols-outlined">
+                        <span class="material-symbols-outlined i-icons pw_visibility">
                                 visibility
                                 </span>
-                        </button>
+                        <input id="idOf-i-Password" class="" type="password" required="required">
+                        <span class="i-label">Password</span>
                     </div>
-                    <span id="invalidPassword" class="invalid"></span>
+                    <span id="invalidPassword" class="error-msg"></span>
                 </div>
 
-                <button id="idContinue" class="continue">Continue</button>
+                <button id="idContinue" class="continue-btn">Continue</button>
             </div>
                 
-            <p>Already a redditor? <a class="logIn" href="">Log In</a></p>
+            <p>Already a redditor? <a class="a-log" href="">Log In</a></p>
         </form>
     </div>
     <script src="scripts/index.js"></script>
