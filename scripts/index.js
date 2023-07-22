@@ -83,4 +83,8 @@ function processContinue()
             continueBtn.style.opacity = "40%"
         }
     }
+    else
+        {
+            continueBtn.style.opacity = "40%"
+        }
 }
